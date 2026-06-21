@@ -1,13 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head><title>TrueNorth Data — Sample Dashboards</title></head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 60px auto;">
-  <h1>Sample Dashboards</h1>
-  <p>Built using public datasets to demonstrate the kind of reporting I can build from your data.</p>
-  <ul>
-    <li><a href="uk_ecommerce_dashboard.html">UK E-Commerce Performance</a></li>
-    <li><a href="coffee_shop_dashboard.html">Coffee Shop Performance</a></li>
-    <li><a href="hotel_bookings_dashboard.html">Hotel Bookings Performance</a></li>
-  </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Dashboards — Raymond Pople</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fb;
+      color: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .container {
+      width: min(100%, 720px);
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+      padding: 40px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 2.5vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 0 0 32px;
+      line-height: 1.75;
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+
+    li {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateY(-2px);
+      border-color: #cbd5e1;
+      background: #eff6ff;
+    }
+
+    a {
+      display: block;
+      padding: 18px 22px;
+      color: #1f2937;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: #2563eb;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 24px;
+      padding: 8px 14px;
+      background: #eef2ff;
+      border-radius: 999px;
+      color: #4338ca;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Sample Dashboards</h1>
+    <p class="subtitle">Built using public datasets to demonstrate the kind of reporting I can build from your data.</p>
+    <ul>
+      <li><a href="uk_ecommerce_dashboard.html">UK E-Commerce Performance</a></li>
+      <li><a href="coffee_shop_dashboard.html">Coffee Shop Performance</a></li>
+      <li><a href="hotel_bookings_dashboard.html">Hotel Bookings Performance</a></li>
+    </ul>
+    <div class="badge">Designed and curated by Raymond Pople</div>
+  </main>
 </body>
 </html>
